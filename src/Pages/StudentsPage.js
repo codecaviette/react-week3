@@ -44,7 +44,7 @@ class StudentsPage extends Component {
         return (
             <div>
                 <h1>Students Page</h1>
-                <Link to="/contact/:id"> Go to the Contact Page </Link>
+                <Link to={`/contact/asdf`}> Go to the Contact Page </Link>
                 <StudentJsx studentData={this.state.students} delete={this.deleteStudent}/>    {/* Pass state as prop studentData (and deleteStudent fxn) to child comp StudentJsx */}
             </div>
         );
