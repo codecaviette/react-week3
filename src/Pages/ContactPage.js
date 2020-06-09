@@ -10,7 +10,7 @@ class ContactPage extends Component {
             <div>
                 <h1>Contact Page</h1>
                 <h3> URL variable: {this.props.match.params.id}</h3> 
-                <Link to="/"> Go to the Students Page </Link>
+                <Link to="/"> Go to the Students Page </Link>           {/* In Link, when you are not writing JS, you can wrap the to value in either "" or {``} */}
             </div>
         )
     }

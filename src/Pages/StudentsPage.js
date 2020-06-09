@@ -44,7 +44,7 @@ class StudentsPage extends Component {
         return (
             <div>
                 <h1>Students Page</h1>
-                <Link to={`/contact/asdf`}> Go to the Contact Page </Link>
+                <Link to="/contact/asdf"> Go to the Contact Page </Link>                       {/* In Link, when you are not writing JS, you can wrap the to value in either "" or {``} */}
                 <StudentJsx studentData={this.state.students} delete={this.deleteStudent}/>    {/* Pass state as prop studentData (and deleteStudent fxn) to child comp StudentJsx */}
             </div>
         );

@@ -12,8 +12,8 @@ class App extends Component {
         <Switch>
           <Route exact path="/" component={StudentsPage}/>
           <Route exact path="/contact/:id" component={ContactPage}/>
-          <Route exact path="/user/:id" component={UserIdPage}/>   {/* :id gives UserShowPage component access to this URL variable*/}
-          <Route path="*">        {/* The asterisk means "everything else" ... redirects to... */}
+          <Route exact path="/user/:id" component={UserIdPage}/>   {/* /:id gives UserShowPage component access to this URL variable; its value can be anything (ex. asdf, 123) */}
+          <Route path="*">        {/* This is a catch-all. The asterisk means "everything else" ... redirects to... */}
             <Redirect to="/" />
           </Route>
         </Switch>

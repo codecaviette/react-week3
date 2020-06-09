@@ -11,7 +11,7 @@ class StudentJsx extends Component {
         let theJsx = this.props.studentData.map((student) => {      // Iterate over the passed prop (object array)
             return (
                 <div>
-                    <Link to={`/user/${student.id}`}>
+                    <Link to={`/user/${student.id}`}>          {/* In RR Link, must use {``} rather than "" when writing JavaScript */} 
                         <h4> {student.name} </h4>
                     </Link>
                     <button onClick={() => this.props.delete(student.id)}> Delete </button>
@@ -22,7 +22,7 @@ class StudentJsx extends Component {
 
         return (
             <div>
-                {theJsx}    {/* Best practice to define variable above the top-level return statement and simply call it in the return */}
+                {theJsx}         {/* Best practice to define variable above the top-level return statement and simply call it in the return stmt */}
             </div>
         )
     }
